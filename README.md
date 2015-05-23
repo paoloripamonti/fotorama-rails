@@ -1,8 +1,10 @@
-# Fotorama::Rails
+# Fotorama Rails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fotorama/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
+[Fotorama] is a simple, stunning, powerful JavaScript gallery.
 
-TODO: Delete this and the text above, and describe your gem
+Simple gem which helps you make the gallery [Fotorama] inside your Rails application
+
+[Fotorama]:         http://fotorama.io/
 
 ## Installation
 
@@ -22,18 +24,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You will need to add this line into your `application.js`:
 
-## Development
+    //= require fotorama
+    
+Add you will need to add this line into your `application.css`:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+    *= require fotorama
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Initialize the gallery
+    
+    $('.fotorama').fotorama({
+        // options
+    })
+    
+or documentation see [customize]
+[customize]:         http://fotorama.io/customize/
 
-## Contributing
+## Versioning
 
-1. Fork it ( https://github.com/[my-github-username]/fotorama-rails/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+fotorama-rails 0.1.0 == Fotorama 4.6.4
