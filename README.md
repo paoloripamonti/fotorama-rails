@@ -25,18 +25,23 @@ Or install it yourself as:
 ## Usage
 
 You will need to add this line into your `application.js`:
-
-    //= require fotorama
+```javascript
+//= require fotorama
+```
     
 Add you will need to add this line into your `application.css`:
-
-    *= require fotorama
+```css
+/*
+*= require fotorama
+*/
+```
 
 Initialize the gallery
-    
-    $('.fotorama').fotorama({
-        // options
-    })
+```javascript
+$('.fotorama').fotorama({
+    // options
+})
+```
     
 For documentation see [customize]
 [customize]:         http://fotorama.io/customize/
