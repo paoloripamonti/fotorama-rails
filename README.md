@@ -38,7 +38,7 @@ Initialize the gallery
         // options
     })
     
-or documentation see [customize]
+For documentation see [customize]
 [customize]:         http://fotorama.io/customize/
 
 ## Versioning
